@@ -16,14 +16,16 @@ but with support of CRUD animations i decided to make such stuff and share it.
 
 with gradle
 ```GRADLE 
-compile 'com.beloo.widget:ChipsLayoutManager:0.3.7@aar'
+implementation 'com.github.KrunalStrategyX:ChipsLayoutManager:0.3.7'
 ```
 
 Assuming you have installed jCenter provider:
 ```GRADLE
 allprojects {
     repositories {
-        jcenter()
+        maven {
+            url 'https://jitpack.io' 
+        }
     }
 }
 ```
